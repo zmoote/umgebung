@@ -1,1 +1,33 @@
-/target
+# Build files
+build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+# Visual Studio Code files
+.vscode/
+*.vscode
+
+# Compiled binary files
+*.o
+*.out
+*.exe
+
+# Compiled library files
+*.a
+*.so
+*.dylib
+
+# Other generated files
+compile_commands.json
+cmake_install.cmake
+install_manifest.txt
+
+# System and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
