@@ -1,0 +1,9 @@
+# Ignore build artifacts and temporary files
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore IDE-specific files
+.vscode/
