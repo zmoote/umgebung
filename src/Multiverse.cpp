@@ -1,4 +1,4 @@
-#include "iostream"
+#include <iostream>
 #include "../include/umgebung/Multiverse.h"
 
 Multiverse::Multiverse() {
@@ -14,5 +14,13 @@ Multiverse::~Multiverse() {
 void Multiverse::generateUniverses(int numUniverses) {
     // Method logic
 
-    std::cout << "Generating " << numUniverses << " Universes..." << std::endl;
+    for(int i = 0; i < numUniverses; i++) {
+
+        Universe universe;
+        universe.setUniqueID(i);
+
+        std::cout << "Created universe " << universe.getUniqueID() << std::endl;
+        
+        universes.push_back(universe);
+    }
 }
