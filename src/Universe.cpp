@@ -13,12 +13,12 @@ Universe::~Universe() {
 
 // Setters
 
-void Universe::setNumDensities(const std::vector<Density>& densities) {
-  this->densities = densities;
+void Universe::setNumVibrationalDensities(const std::vector<VibrationalDensity>& numVibrationalDensities) {
+  this->numVibrationalDensities = numVibrationalDensities;
 }
 
-void Universe::setSourceDensity(const int& sourceDensity) {
-  this->sourceDensity = sourceDensity;
+void Universe::setSourceVibrationalDensity(const int& sourceVibrationalDensity) {
+  this->sourceVibrationalDensity = sourceVibrationalDensity;
 } 
 
 void Universe::setName(const std::string& name) {
@@ -31,12 +31,12 @@ void Universe::setUniqueID(unsigned int uniqueID) {
 
 // Getters
 
-std::vector<Density> Universe::getNumDensities() const {
-  return densities;
+std::vector<VibrationalDensity> Universe::getNumVibrationalDensities() const {
+  return numVibrationalDensities;
 }
 
-int Universe::getSourceDensity() const {
-  return sourceDensity; 
+int Universe::getSourceVibrationalDensity() const {
+  return sourceVibrationalDensity; 
 }
 
 std::string Universe::getName() const {
