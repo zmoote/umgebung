@@ -3,16 +3,12 @@
 #include "../include/umgebung/Universe.h"
 
 Universe::Universe() {
-    // Initalization logic
     std::cout << "Universe Constructor" << std::endl;
 }
 
 Universe::~Universe() {
-    // Cleanup logic
     std::cout << "Universe Deconstructor" << std::endl;
 }
-
-// Setters
 
 void Universe::setNumVibrationalDensities(const unsigned int& numVibrationalDensities) {
   this->numVibrationalDensities = numVibrationalDensities;
@@ -22,15 +18,13 @@ void Universe::setSourceVibrationalDensity(const unsigned int& sourceVibrational
   this->sourceVibrationalDensity = sourceVibrationalDensity;
 } 
 
-void Universe::setName(const std::string& name) {
+void Universe::setName(const std::string& universeName) {
   this->name = name;
 }
 
 void Universe::setUniqueID(unsigned int uniqueID) {
   this->uniqueID = uniqueID;
 }
-
-// Getters
 
 unsigned int Universe::getNumVibrationalDensities() const {
   return numVibrationalDensities;

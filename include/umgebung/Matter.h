@@ -8,18 +8,18 @@
 class Matter {
 
     private:
-        std::vector<VibrationalDensity> vDensities;
+        VibrationalDensity vDensity;
         PhysicalDensity pDensity;
 
     public:
         Matter();
         ~Matter();
 
-        // Setters
-        
+        void setVibrationalDensity(const VibrationalDensity& vDensity);
+        VibrationalDensity getVibrationalDensity() const;
 
-        // Getters
-
+        void setPhysicalDensity(const PhysicalDensity& pDensity);
+        PhysicalDensity getPhysicalDensity() const;
 };
 
 #endif
