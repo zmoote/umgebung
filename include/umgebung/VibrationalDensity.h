@@ -1,21 +1,23 @@
 // VibrationalDensity.h
 
-#ifndef VibrationalDensity_H
-#define VibrationalDensity_H
+#include <string>
+
+#ifndef VIBRATIONALDENSITY_H
+#define VIBRATIONALDENSITY_H
 
 class VibrationalDensity {
     private:
         std::string name;
-        double vibrationFrequency;
+        double vibrationalFrequency;
 
     public:
         VibrationalDensity();
         ~VibrationalDensity();
 
-        void setVibrationFrequency(const double& vibrationFrequency);
-        double getVibrationFrequency() const;
+        void setVibrationalFrequency(const double& vibrationalFrequency);
+        double getVibrationalFrequency() const;
 
-        void setName(const std::string& VibrationalDensityName);
+        void setName(const std::string& name);
         std::string getName() const;
 };
 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "../include/umgebung/Universe.h"
 
 Universe::Universe() {
@@ -13,11 +14,11 @@ Universe::~Universe() {
 
 // Setters
 
-void Universe::setNumVibrationalDensities(const std::vector<VibrationalDensity>& numVibrationalDensities) {
+void Universe::setNumVibrationalDensities(const unsigned int& numVibrationalDensities) {
   this->numVibrationalDensities = numVibrationalDensities;
 }
 
-void Universe::setSourceVibrationalDensity(const int& sourceVibrationalDensity) {
+void Universe::setSourceVibrationalDensity(const unsigned int& sourceVibrationalDensity) {
   this->sourceVibrationalDensity = sourceVibrationalDensity;
 } 
 
@@ -31,11 +32,11 @@ void Universe::setUniqueID(unsigned int uniqueID) {
 
 // Getters
 
-std::vector<VibrationalDensity> Universe::getNumVibrationalDensities() const {
+unsigned int Universe::getNumVibrationalDensities() const {
   return numVibrationalDensities;
 }
 
-int Universe::getSourceVibrationalDensity() const {
+unsigned int Universe::getSourceVibrationalDensity() const {
   return sourceVibrationalDensity; 
 }
 

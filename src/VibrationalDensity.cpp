@@ -14,8 +14,8 @@ void VibrationalDensity::setName(const std::string& name) {
     this->name = name;
 }
 
-void VibrationalDensity::setVibrationFrequency(const double& vibrationFrequency) {
-    this->vibrationFrequency = vibrationFrequency;
+void VibrationalDensity::setVibrationalFrequency(const double& vibrationalFrequency) {
+    this->vibrationalFrequency = vibrationalFrequency;
 }
 
 // Getters
@@ -23,6 +23,6 @@ std::string VibrationalDensity::getName() const {
     return name;
 }
 
-double VibrationalDensity::getVibrationFrequency() const {
-    return vibrationFrequency;
+double VibrationalDensity::getVibrationalFrequency() const {
+    return vibrationalFrequency;
 }
