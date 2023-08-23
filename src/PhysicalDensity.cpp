@@ -8,3 +8,23 @@ PhysicalDensity::PhysicalDensity() {
 PhysicalDensity::~PhysicalDensity() {
     std::cout << "PhysicalDensity Deconstructor" << std::endl;
 }
+
+void PhysicalDensity::setMass(double m) {
+    mass = m;    
+}
+
+void PhysicalDensity::setVolume(double v) {
+    volume = v;
+}
+
+double PhysicalDensity::getMass() const {
+    return mass;
+}
+
+double PhysicalDensity::getVolume() const {
+    return volume;
+}
+
+double PhysicalDensity::calculateDensity() const {
+    return mass / volume;
+}

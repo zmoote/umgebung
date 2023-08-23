@@ -1,5 +1,6 @@
 // Universe.h
 
+#include <vector>
 #include "Matter.h"
 
 #ifndef UNIVERSE_H
@@ -12,6 +13,8 @@ private:
     unsigned int uniqueID;
     unsigned int numVibrationalDensities;
     unsigned int sourceVibrationalDensity = numVibrationalDensities + 1;
+    Matter matter;
+    std::vector<VibrationalDensity> vibrationalDensities;
 
 public:
     Universe();

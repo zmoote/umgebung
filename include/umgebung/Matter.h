@@ -1,4 +1,3 @@
-#include <vector>
 #include "VibrationalDensity.h"
 #include "PhysicalDensity.h"
 

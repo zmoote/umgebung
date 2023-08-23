@@ -3,7 +3,27 @@
 #include "../include/umgebung/Universe.h"
 
 Universe::Universe() {
-    std::cout << "Universe Constructor" << std::endl;
+    Matter m;
+
+    VibrationalDensity vd;
+    vd.setVibrationalFrequency(rand() % 100 + 1); // 1-100Hz
+
+    PhysicalDensity pd;
+    pd.setMass(rand() % 10 + 1); // 1-10kg
+    pd.setVolume(rand() % 10 + 1); // 1-10m^3
+
+    m.setVibrationalDensity(vd);
+    m.setPhysicalDensity(pd);
+
+    matter = m;
+
+    for(int i=0; i<10; i++) {
+
+      VibrationalDensity vd;
+      vd.setVibrationalFrequency(rand() % 100 + 1);
+
+      vibrationalDensities.push_back(vd);
+    }
 }
 
 Universe::~Universe() {
