@@ -3,22 +3,21 @@
 #include <iostream>
 #include <random>
 #include "../include/umgebung/Multiverse.h"
+#include "../include/umgebung/Logger.h"
 
 int main() {
+    
+    Logger::log(Logger::Info, "Application started");
+
     Multiverse mv;
-    mv.generateUniverses(5); 
+    mv.generateUniverses(5);
 
-    for(Universe u : mv.universes) {
-    
-    print("Universe ", u.getId());
-    
-    print("Matter: ");
-    print("Vibrational ", u.matter.getVibrationalDensity().getFrequency());
-    print("Physical ", u.matter.getPhysicalDensity().calculateDensity());
+    int numUniverses = mv.getNumUniverses();
 
-    for(VibrationalDensity vd : u.vibrationalDensities) {
-        print("   ", vd.getFrequency()); 
-    }
+    for (int i=0; i < numUniverses; i++) {
 
-    }
+        Universe u = mv.getUniverse(i);
+
+        Logger::log(Logger::Info, "Universe "+u.getUniqueID());
+    }    
 }

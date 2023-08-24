@@ -14,6 +14,14 @@ public:
 
     void generateUniverses(int numUniverses);
 
+    int getNumUniverses() const;
+
+    Universe getUniverse(int index);
+
+    void addUniverse(Universe u);
+
+    std::vector<Universe> getUniverses();
+
 private:
     std::vector<Universe> universes;
 };

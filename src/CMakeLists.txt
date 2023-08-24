@@ -1,1 +1,1 @@
-add_executable(umgebung main.cpp Multiverse.cpp Universe.cpp Matter.cpp VibrationalDensity.cpp PhysicalDensity.cpp)
+add_executable(umgebung main.cpp Multiverse.cpp Universe.cpp Matter.cpp VibrationalDensity.cpp PhysicalDensity.cpp Logger.cpp)
