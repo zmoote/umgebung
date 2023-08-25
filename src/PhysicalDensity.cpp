@@ -1,12 +1,13 @@
 #include <iostream>
 #include "../include/umgebung/PhysicalDensity.h"
+#include "../include/umgebung/Logger.h"
 
 PhysicalDensity::PhysicalDensity() {
-    std::cout << "PhysicalDensity Constructor" << std::endl;
+    Logger::log(Logger::Info, "PhysicalDensity Constructor");
 }
 
 PhysicalDensity::~PhysicalDensity() {
-    std::cout << "PhysicalDensity Deconstructor" << std::endl;
+    Logger::log(Logger::Info, "PhysicalDensity Deconstructor");
 }
 
 void PhysicalDensity::setMass(double m) {

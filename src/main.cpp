@@ -8,6 +8,7 @@
 int main() {
     
     Logger::log(Logger::Info, "Application started");
+    
 
     Multiverse mv;
     mv.generateUniverses(5);

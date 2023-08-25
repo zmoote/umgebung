@@ -1,8 +1,12 @@
 #include <iostream>
 #include <string>
 #include "../include/umgebung/Universe.h"
+#include "../include/umgebung/Logger.h"
 
 Universe::Universe() {
+
+  Logger::log(Logger::Info, "Universe Constructor");
+
     Matter m;
 
     VibrationalDensity vd;
@@ -27,7 +31,7 @@ Universe::Universe() {
 }
 
 Universe::~Universe() {
-    std::cout << "Universe Deconstructor" << std::endl;
+    Logger::log(Logger::Info, "Universe Deconstructor");
 }
 
 void Universe::setNumVibrationalDensities(const unsigned int& numVibrationalDensities) {

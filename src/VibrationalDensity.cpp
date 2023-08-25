@@ -1,12 +1,13 @@
 #include <iostream>
 #include "../include/umgebung/VibrationalDensity.h"
+#include "../include/umgebung/Logger.h"
 
 VibrationalDensity::VibrationalDensity() {
-    std::cout << "VibrationalDensity Constructor" << std::endl;
+    Logger::log(Logger::Info, "VibrationalDensity Constructor");
 }
 
 VibrationalDensity::~VibrationalDensity() {
-    std::cout << "VibrationalDensity Deconstructor" << std::endl;
+    Logger::log(Logger::Info, "VibrationalDensity Deconstructor");
 }
 
 // Setters

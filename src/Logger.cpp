@@ -14,7 +14,7 @@ void Logger::log(Level level, std::string message) {
       break;
     
     case Info:
-      std::cout << "[ERROR]: " << message << std::endl;
+      std::cout << "[INFO]: " << message << std::endl;
       break;
       
   }
