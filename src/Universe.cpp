@@ -5,8 +5,6 @@
 
 Universe::Universe() {
 
-  Logger::log(Logger::Info, "Universe Constructor");
-
     Matter m;
 
     VibrationalDensity vd;
@@ -31,7 +29,7 @@ Universe::Universe() {
 }
 
 Universe::~Universe() {
-    Logger::log(Logger::Info, "Universe Deconstructor");
+
 }
 
 void Universe::setNumVibrationalDensities(const unsigned int& numVibrationalDensities) {

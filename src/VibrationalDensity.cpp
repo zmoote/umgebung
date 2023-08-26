@@ -3,11 +3,11 @@
 #include "../include/umgebung/Logger.h"
 
 VibrationalDensity::VibrationalDensity() {
-    Logger::log(Logger::Info, "VibrationalDensity Constructor");
+    
 }
 
 VibrationalDensity::~VibrationalDensity() {
-    Logger::log(Logger::Info, "VibrationalDensity Deconstructor");
+    
 }
 
 // Setters

@@ -3,11 +3,11 @@
 #include "../include/umgebung/Logger.h"
 
 PhysicalDensity::PhysicalDensity() {
-    Logger::log(Logger::Info, "PhysicalDensity Constructor");
+    
 }
 
 PhysicalDensity::~PhysicalDensity() {
-    Logger::log(Logger::Info, "PhysicalDensity Deconstructor");
+    
 }
 
 void PhysicalDensity::setMass(double m) {
