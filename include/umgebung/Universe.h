@@ -35,7 +35,7 @@ public:
 
     Matter getMatter() const; // Getter for Matter
 
-    
+    void generateFractalProperties();
 
     // Other methods
 

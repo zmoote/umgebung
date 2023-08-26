@@ -15,7 +15,7 @@ int main() {
 
     Multiverse multiverse;
 
-    unsigned int numUniverses = rand() % 100 + 1;
+    unsigned int numUniverses = rand() % 10 + 1;
 
     // Generate universes
     multiverse.generateUniverses(numUniverses);
