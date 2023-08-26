@@ -2,6 +2,7 @@
 
 #include <vector>
 #include "Matter.h"
+#include "VibrationalDensity.h"
 
 #ifndef UNIVERSE_H
 #define UNIVERSE_H
@@ -13,7 +14,7 @@ private:
     unsigned int uniqueID;
     unsigned int numVibrationalDensities;
     unsigned int sourceVibrationalDensity = numVibrationalDensities + 1;
-    Matter matter;
+    Matter matter; // Using Matter as an intermediary
     std::vector<VibrationalDensity> vibrationalDensities;
 
 public:
@@ -28,10 +29,13 @@ public:
 
     void setName(const std::string& universeName);
     std::string getName() const;
-    
+
     void setUniqueID(unsigned int id);
     unsigned int getUniqueID() const;
 
+    Matter getMatter() const; // Getter for Matter
+
+    // Other methods
 
 };
 

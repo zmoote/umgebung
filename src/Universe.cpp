@@ -1,65 +1,49 @@
-#include <iostream>
-#include <string>
+// Universe.cpp
+
 #include "../include/umgebung/Universe.h"
-#include "../include/umgebung/Logger.h"
 
 Universe::Universe() {
-
-    Matter m;
-
-    VibrationalDensity vd;
-    vd.setVibrationalFrequency(rand() % 100 + 1); // 1-100Hz
-
-    PhysicalDensity pd;
-    pd.setMass(rand() % 10 + 1); // 1-10kg
-    pd.setVolume(rand() % 10 + 1); // 1-10m^3
-
-    m.setVibrationalDensity(vd);
-    m.setPhysicalDensity(pd);
-
-    matter = m;
-
-    for(int i=0; i<10; i++) {
-
-      VibrationalDensity vd;
-      vd.setVibrationalFrequency(rand() % 100 + 1);
-
-      vibrationalDensities.push_back(vd);
-    }
+    // Initialize properties
 }
 
 Universe::~Universe() {
-
+    // Cleanup
 }
 
 void Universe::setNumVibrationalDensities(const unsigned int& numVibrationalDensities) {
-  this->numVibrationalDensities = numVibrationalDensities;
-}
-
-void Universe::setSourceVibrationalDensity(const unsigned int& sourceVibrationalDensity) {
-  this->sourceVibrationalDensity = sourceVibrationalDensity;
-} 
-
-void Universe::setName(const std::string& universeName) {
-  this->name = name;
-}
-
-void Universe::setUniqueID(unsigned int uniqueID) {
-  this->uniqueID = uniqueID;
+    this->numVibrationalDensities = numVibrationalDensities;
 }
 
 unsigned int Universe::getNumVibrationalDensities() const {
-  return numVibrationalDensities;
+    return numVibrationalDensities;
+}
+
+void Universe::setSourceVibrationalDensity(const unsigned int& sourceVibrationalDensity) {
+    this->sourceVibrationalDensity = sourceVibrationalDensity;
 }
 
 unsigned int Universe::getSourceVibrationalDensity() const {
-  return sourceVibrationalDensity; 
+    return sourceVibrationalDensity;
+}
+
+void Universe::setName(const std::string& universeName) {
+    this->name = universeName;
 }
 
 std::string Universe::getName() const {
-  return name;
+    return name;
+}
+
+void Universe::setUniqueID(unsigned int id) {
+    this->uniqueID = id;
 }
 
 unsigned int Universe::getUniqueID() const {
-  return uniqueID;
+    return uniqueID;
 }
+
+Matter Universe::getMatter() const {
+    return matter;
+}
+
+// Implement other methods as needed
