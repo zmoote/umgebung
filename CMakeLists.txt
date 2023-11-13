@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 
-project(umgebung)
+project(umgebung LANGUAGES CXX CUDA)
 
 # Set the C++ compiler
 set(CMAKE_CXX_COMPILER g++)
