@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.10)
+project(umgebung)
 
-project(umgebung LANGUAGES CXX CUDA)
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 11)
 
-# Set the C++ compiler
-set(CMAKE_CXX_COMPILER g++)
-
-# Add the source code directory
+# Add the subdirectories
 add_subdirectory(src)
+add_subdirectory(include)

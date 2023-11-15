@@ -1,4 +1,17 @@
-add_executable(umgebung main.cu Multiverse.cpp Universe.cpp Logger.cpp)
+# Add your source files
+set(SOURCE_FILES
+    main.cpp
+    Multiverse.cpp
+    Universe.cpp
+    Logger.cpp
+    # ... add other source files
+)
 
-# Set CUDA_ARCHITECTURES property
-set_property(TARGET umgebung PROPERTY CUDA_ARCHITECTURES 80 90)
+# Create an executable target
+add_executable(umgebung ${SOURCE_FILES})
+
+# If CUDA is found, enable CUDA compilation
+if(CUDA_FOUND)
+    enable_language(CUDA)
+    target_sources(umgebung PRIVATE cuda_file.cu)
+endif()

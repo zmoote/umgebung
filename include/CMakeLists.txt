@@ -1,7 +1,10 @@
-# This CMakeLists.txt is for including header files in the project
-
-# Add the include directories for header files
-target_include_directories(umgebung PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}/umgebung  # Add each subdirectory here
+# Add header files
+set(HEADER_FILES
+    Logger.h
+    Multiverse.h
+    Universe.h
+    # ... add other header files
 )
+
+# Include directories
+target_include_directories(umgebung PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
