@@ -17,14 +17,6 @@ public:
   Multiverse();
   ~Multiverse();
 
-  void generateUniverses(int numUniverses);
-  
-  int getNumUniverses();
-  
-  Universe getUniverse(int index);
-
-  void addUniverse(Universe universe); 
-
 };
 
-#endif
+#endif //MULTIVERSE_H
